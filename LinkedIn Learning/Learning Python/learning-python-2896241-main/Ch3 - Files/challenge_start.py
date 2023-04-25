@@ -8,7 +8,7 @@ def main():
         if os.path.isfile(entry):
             filesize = os.path.getsize(entry)
             bytecount += filesize
-    os.mkdir("result")
+    os.mkdir("results")
     myFile = open("results/results.txt", "w+")
     if myFile.mode == "w+":
         myFile.write("Total bytecount:" + str(bytecount) + "\nFiles list:\n")
