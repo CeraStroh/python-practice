@@ -5,15 +5,27 @@
 # docs for month calendar
 import calendar
 
+def countdays(year, month, whichday):
+    daycount = 0
+    weekslist = calendar.monthcalendar(year, month)
+    for week in weekslist:
+        if week[whichday] != 0:
+            daycount += 1
+    return daycount
+
 def main():
     run = True
     while (run):
-        # try:
-            days = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
-            i = 1
-            for d in calendar.day_name:
-                print(i, d)
-                i = i+1
+        try:
+            print("Which day of the week do you want to count?")
+            print("0: Monday")
+            print("1: Tuesday")
+            print("2: Wednesday")
+            print("3: Thursday")
+            print("4: Friday")
+            print("5: Saturday")
+            print("6: Sunday")
+            print("Or 'exit' to quit")
             dayNum = input("Which day of the week do you want to count?")
             if dayNum == "exit":
                 run = False
@@ -30,9 +42,9 @@ def main():
             if monthNum == "exit":
                 run = False
                 break
-        # except ValueError as e:
-        #     print("Sorry, that's not valid input")
-        #     print(e)
+        except Exception as e:
+            print("Sorry, that's not valid input")
+            print(e)
 
 if __name__ == "__main__":
     main()
