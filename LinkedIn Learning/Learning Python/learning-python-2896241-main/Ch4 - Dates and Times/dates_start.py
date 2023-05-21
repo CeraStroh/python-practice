@@ -21,6 +21,15 @@ def main():
     # days = ["M", "T", "W", "R", "F", "Sa", "Su"]
     # print("Which is a ", days[today.weekday()])
     
+    # TODO: retrieve tomorrow's weekday
+    # today=date.today()
+    # days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    # print("Tomorrow will be " + days[(today.weekday()+1) % 7])
+
+    # TODO: alert the user if their password expires in less than 7 days
+    # if ((texp-date.today()).days < 7):
+    # print("password will expire soon!")
+
     ## DATETIME OBJECTS
     # TODO: Get today's date from the datetime class
     today = datetime.now()
