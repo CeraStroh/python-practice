@@ -14,6 +14,7 @@ from datetime import timedelta
 
 # TODO: print today's date
 # now = datetime.now()
+# or now = datetime.date(datetime.now())
 # print("Today is", now)
 
 # TODO: print today's date one year from now
@@ -26,6 +27,10 @@ from datetime import timedelta
 # t = datetime.now() - timedelta(weeks=1)
 # s = t.strftime("%A %B %d, %Y")
 # print("One week ago it was", s)
+
+# TODO: calculate tomorrow's date
+    # today=date.today()
+    # tomorrow = today + timedelta(days=1)
 
 ### How many days until April Fools' Day?
 today = date.today()
