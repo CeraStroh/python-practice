@@ -17,6 +17,13 @@ c = calendar.TextCalendar(calendar.MONDAY)
 # str = hc.formatmonth(2023, 1)
 # print(str)
 
+# TODO: create a text-formatted monthly calendar for every month in the current year
+# import datetime
+# year = datetime.datetime.now().year
+# cal = calendar.TextCalendar(calendar.SUNDAY)
+# for m in range(1,13):
+#     print(cal.formatmonth(year, m, 0, 0))
+
 # TODO: loop over the days of a month
 # zeroes mean that the day of the week is in an overlapping month
 # for i in c.itermonthdays(2023,8):
